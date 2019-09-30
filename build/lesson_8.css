@@ -1,0 +1,145 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #33333a; }
+
+body {
+  min-height: 100vh;
+  height: 100%;
+  background-color: #fff; }
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p {
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+ul,
+ol {
+  list-style: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700; }
+
+button,
+input,
+textarea {
+  font-size: 1rem;
+  outline: none; }
+
+.page-section {
+  display: flex;
+  justify-content: center; }
+
+.page-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 16px; }
+
+.catalog-section {
+  background-color: #fff; }
+
+.catalog {
+  display: flex; }
+  .catalog__filters {
+    width: 260px;
+    flex-grow: 0; }
+  .catalog__list {
+    flex-grow: 1; }
+
+.filters {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch; }
+  .filters__header {
+    border-bottom: 2px solid #f3f3f3;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px; }
+  .filters__title {
+    padding: 14px 0;
+    text-transform: uppercase; }
+  .filters__reset-control {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    padding: 14px 0;
+    color: #ff6008;
+    text-transform: uppercase;
+    font-size: 12px; }
+
+.accordion__menu {
+  padding-left: 8px;
+  height: 0;
+  visibility: hidden; }
+  .accordion__menu_open {
+    height: auto;
+    visibility: visible; }
+
+.accordion__sub-menu {
+  padding-left: 42px; }
+
+.accordion__title {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  width: 100%;
+  text-align: left;
+  padding: 8px 0;
+  cursor: pointer; }
+  .accordion__title:hover {
+    color: #ff6008; }
+  .accordion__title:focus {
+    color: #ff6008; }
+  .accordion__title:active {
+    color: #ff6008; }
+  .accordion__title_lg {
+    font-size: 24px;
+    margin: 8px 0; }
+    .accordion__title_lg:after {
+      content: '>';
+      font-size: 15px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%) rotate(90deg);
+      right: 0; }
+  .accordion__title_icon_left {
+    padding-left: 15px; }
+    .accordion__title_icon_left:before {
+      content: '>';
+      font-size: 15px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%) rotate(90deg);
+      left: 0; }
+
+
+/*# sourceMappingURL=lesson_8.css.map*/

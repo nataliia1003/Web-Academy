@@ -1,0 +1,91 @@
+@import "./styles/base.scss";
+$dots-color: #d8d8d8;
+$active-color: #097af7;
+
+
+.page_slider {
+  margin: 100px auto;
+  width: 500px;
+  height: 515px;
+  overflow: hidden;
+  position: relative;
+  .slide {
+    position: relative;
+    img {
+      width: auto;
+      height: 515px;
+      overflow: hidden;
+    }
+    .text-box {
+      position: absolute;
+      height: 147px;
+      width: 100%;
+      opacity: 0.7;
+      background-color: black;
+      bottom: 0;
+
+      .text {
+        overflow: hidden;
+        color: #FFFFFF;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.6;
+        text-align: center;
+        width: 444px;
+        height: 95px;
+        margin: 1px auto;
+      }
+    }
+  }
+  .sliders-control {
+    padding: 10px 40px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+
+    .prev-btn, .next-btn {
+      display: block;
+      width: 40px;
+      height: 22px;
+      border: none;
+    }
+    .prev-btn {
+      background: linear-gradient(110deg, #2d3ed5 1%, #0189ff);
+      -webkit-background-clip: text;
+      color: transparent;
+
+    }
+    .next-btn {
+      background: linear-gradient(110deg, #0189ff 1%, #2d3ed5);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    .slider-dots {
+      display: flex;
+      justify-content: space-between;
+      width: 138px;
+      
+      .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: $dots-color;
+      }
+      .dot-active {
+        background-color: $active-color;
+        margin-top: 2.5px;
+        margin-left: 2.5px;
+      }
+      .border-dot {
+        margin-top: -2.5px;
+        width: 19px;
+        height: 19px;
+        border-radius: 50%;
+        border: 1px #097af7 solid;
+      }
+    }
+  }
+
+}

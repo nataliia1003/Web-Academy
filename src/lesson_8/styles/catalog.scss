@@ -1,0 +1,19 @@
+@import './variables.scss';
+
+$filters-width: 260px;
+
+.catalog-section {
+  background-color: $page-bg-color;
+}
+
+.catalog {
+  display: flex;
+
+  &__filters {
+    width: $filters-width;
+    flex-grow: 0;
+  }
+  &__list {
+    flex-grow: 1;
+  }
+}

@@ -1,0 +1,214 @@
+@font-face {
+  font-family: "Oswald";
+  src: url(./assets/fonts/Oswald-ExtraLight.ttf) format('truetype');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url(./assets/fonts/Oswald-Light.ttf) format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url(./assets/fonts/Oswald-Regular.ttf) format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url(./assets/fonts/Oswald-Medium.ttf) format('truetype');
+  font-weight: 500;
+}
+
+
+@font-face {
+  font-family: "Oswald";
+  src: url(./assets/fonts/Oswald-SemiBold.ttf) format('truetype');
+  font-weight: 600;
+}
+
+
+@font-face {
+  font-family: "Oswald";
+  src: url(./assets/fonts/Oswald-Bold.ttf) format('truetype');
+  font-weight: 700;
+}
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 16px;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 500; }
+
+body {
+  min-height: 100vh;
+  height: 100%;
+  background-color: #ffffff; }
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p {
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400; }
+
+h1 {
+  font-size: 12.5rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.5rem; }
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+  max-width: 2800px;
+  margin: 0 auto;
+  box-shadow: 0 0 0 0 black; }
+
+.baner {
+  width: 100%;
+  height: calc(100vh - 64px);
+  max-height: 960px;
+  background-image: url(./assets/images/cuba-tourism-photo-of-a-street.jpg);
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative; }
+
+.gradient {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)); }
+
+.baner-title {
+  color: #fff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5); }
+
+.baner-sub-title {
+  color: #fff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: absolute;
+  bottom: 33px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  font-weight: 400;
+  transform: translateY(50%); }
+
+.baner-sub-title:after,
+.baner-sub-title:before {
+  width: 30%;
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  height: 1px;
+  background-color: #fff; }
+
+.baner-sub-title:after {
+  left: 30px; }
+
+.baner-sub-title:before {
+  right: 30px; }
+
+.border {
+  border: 1px solid #fff;
+  height: calc(100% - 60px);
+  width: calc(100% - 60px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-bottom: none; }
+
+.page-nav {
+  display: flex;
+  justify-content: center;
+  height: 64px;
+  border-bottom: 1px solid #d0d4d8; }
+
+.link {
+  display: block;
+  color: #909090;
+  text-align: center;
+  line-height: 63px;
+  padding: 0 8px;
+  position: relative;
+  font-size: 0.875rem; }
+
+.link-active {
+  font-weight: 600;
+  color: #4e5665; }
+
+.link-active:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #ecb84c;
+  bottom: -1px;
+  left: 0; }
+
+.page-section {
+  padding: 80px 100px;
+  position: relative;
+  max-width: 1170px;
+  margin: 0 auto;
+  text-align: center; }
+
+.page-section:after {
+  content: '';
+  height: 1px;
+  width: 100%;
+  opacity: 0.5;
+  background-color: #d0d4d8;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+.page-section > * {
+  margin-bottom: 40px; }
+
+.page-section > *:last-child {
+  margin-bottom: 0; }
+
+.section-title {
+  color: #4e5665; }
+
+.section-description {
+  text-align: left;
+  color: #505050; }
+
+
+/*# sourceMappingURL=lesson_5.css.map*/

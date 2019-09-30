@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 16px;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 500; }
+
+body {
+  min-height: 100vh;
+  height: 100%;
+  background-color: #ffffff; }
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p {
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+ul,
+ol {
+  list-style: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400; }
+
+h1 {
+  font-size: 12.5rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.5rem; }
+
+.modal {
+  width: 100%;
+  max-width: 450px;
+  position: relative;
+  background-color: #04082c;
+  padding: 60px;
+  color: #fff; }
+  .modal__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #f24823;
+    background: transparent;
+    border: none;
+    font-size: 1rem; }
+  .modal__header {
+    text-align: center; }
+  .modal__row {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px; }
+  .modal__confirm {
+    width: 125px;
+    height: 40px;
+    border-radius: 20px;
+    border: solid 1px #0075dc;
+    background-color: #0088ff;
+    color: #fff;
+    margin-right: 30px; }
+  .modal__cancel {
+    width: 125px;
+    height: 40px;
+    border-radius: 20px;
+    border: solid 1px #c43f22;
+    background-color: #f24823;
+    color: #fff; }
+
+
+/*# sourceMappingURL=lesson_7.css.map*/

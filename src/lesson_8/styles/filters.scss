@@ -1,0 +1,87 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+$header-spacing: 14px;
+
+.filters {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  &__header {
+    border-bottom: 2px solid #f3f3f3;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-size: $font-size-small;
+  }
+  &__title {
+    padding: $header-spacing 0;
+    text-transform: uppercase;
+  }
+  &__reset-control {
+    @include btn-reset-default;
+    padding: $header-spacing 0;
+    color: $color-active;
+    text-transform: uppercase;
+    font-size: $font-size-small;
+  }
+}
+
+@mixin chevron {
+  content: '>';
+  font-size: $font-size-base;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.accordion {
+  &__menu {
+    padding-left: $spacing;
+    height: 0;
+    visibility: hidden;
+    &_open {
+      height: auto;
+      visibility: visible;
+    }
+  }
+
+  &__sub-menu {
+    padding-left: 50px - $spacing;
+  }
+
+  &__title {
+    @include btn-reset-default;
+    position: relative;
+    width: 100%;
+    text-align: left;
+    padding: $spacing 0;
+    cursor: pointer;
+    &:hover {
+      color: $color-active;
+    }
+    &:focus {
+      color: $color-active;
+    }
+    &:active {
+      color: $color-active;
+    }
+    &_lg {
+      font-size: $font-size-large;
+      margin: $spacing 0;
+      &:after {
+        @include chevron;
+        right: 0;
+      }
+    }
+    &_icon_left {
+      padding-left: 15px;
+      &:before {
+        @include chevron;
+        left: 0;
+      }
+    }
+  }
+}

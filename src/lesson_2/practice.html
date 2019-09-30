@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .test {
+      color: magenta;
+    }
+   
+    .field {
+      background: #e3f0ea;
+      outline: none;
+      color: red;
+    }
+    
+    .field:hover {
+      background:yellow;
+      border: 5px solid orange;
+    }
+    .field:focus {
+      font-size: 20px;
+      background: magenta;
+      color: #FFF;
+    }
+
+    .item {
+      background-color: grey;
+      color: #FFF;
+    }
+
+    .item:nth-of-type(3) {
+      background-color: #FFF;
+      color: grey;
+    }
+    .item:first-child {
+      background-color: green;
+    }
+  </style>     
+</head>
+<body>
+  <input class="first-field test" type="text">
+
+  <ul>
+    <div>TEST</div>
+      <div>TEST</div>
+      <div>TEST</div>
+    <li class="item">Item 1</li>
+    <div>TEST</div>
+    <div>TEST</div>
+    <li class="item">Item 2</li>
+    <li class="item">Item 3</li>
+    <li class="item">Item 5</li>
+    <li class="item">Item 6</li>
+    <li class="item">Item 7</li>
+    <li class="item">Item 8</li>
+    <li class="item">Item 9</li>
+  </ul>
+</body>
+</html>

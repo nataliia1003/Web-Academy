@@ -1,0 +1,15 @@
+.modal {
+  width: 100%;
+  max-width: 450px;
+  position: relative;
+  background-color: #04082c;
+}
+.modal__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #f24823;
+}
+.modal .test {
+  background-color: green;
+}

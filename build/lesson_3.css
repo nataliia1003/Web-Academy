@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif; }
+
+body {
+  background-color: #6a62d2; }
+
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0; }
+
+.weather-widget {
+  width: 500px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  margin-left: -250px; }
+
+.background {
+  width: 100%; }
+
+.overlay {
+  height: 322px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 240px;
+  background: rgba(0, 0, 0, 0.67);
+  text-align: center;
+  color: #FFF; }
+
+.icon {
+  height: 70px; }
+
+.degrees {
+  font-size: 52px;
+  position: relative;
+  width: 85px;
+  margin: 0 auto; }
+
+.degrees:after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.clouds {
+  font-size: 24px; }
+
+.date, .icon, .degrees, .clouds {
+  margin-top: 10px; }
+
+.footer {
+  height: 100px;
+  background-color: #000023;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex; }
+
+.day {
+  color: #FFF;
+  width: 14.3%;
+  position: relative; }
+
+.day:after {
+  content: '';
+  background-color: #a0a0ac;
+  width: 1px;
+  height: 50px;
+  position: absolute;
+  bottom: 25px;
+  right: 1px; }
+
+.day:last-child:after {
+  display: none; }
+
+.day-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+.day-icon {
+  width: 100%; }
+
+.day-content > * {
+  margin-top: 6px; }
+
+
+/*# sourceMappingURL=lesson_3.css.map*/

@@ -1,0 +1,48 @@
+$root-max-width: 450px;
+$modal-bg-color: #04082c;
+$error-color: #f24823;
+$font-color: #fff;
+
+.modal {
+  width: 100%;
+  max-width: $root-max-width;
+  position: relative;
+  background-color: $modal-bg-color;
+  padding: 60px;
+  color: $font-color;
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: $error-color;
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+  }
+  &__header {
+    text-align: center;
+  }
+  &__row {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  &__confirm {
+    width: 125px;
+    height: 40px;
+    border-radius: 20px;
+    border: solid 1px #0075dc;
+    background-color: #0088ff;
+    color: $font-color;
+    margin-right: 30px;
+  }
+  &__cancel {
+    width: 125px;
+    height: 40px;
+    border-radius: 20px;
+    border: solid 1px #c43f22;
+    background-color: #f24823;
+    color: $font-color;
+  }
+}
