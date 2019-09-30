@@ -11,6 +11,6 @@ const _path = __dirname;
 
 let config = baseConfig(_path);
 
-config = prodConfig(config, path.normalize(path.join(_path + "/build")));
+config = prodConfig(config, path.normalize(path.join(_path + '/docs')));
 
 module.exports = config;

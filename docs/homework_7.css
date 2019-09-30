@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 16px; }
+
+body {
+  min-height: 100vh;
+  height: 100%;
+  background-color: #ffffff; }
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p {
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+ul,
+ol {
+  list-style: none; }
+
+.page_slider {
+  margin: 100px auto;
+  width: 500px;
+  height: 515px;
+  overflow: hidden;
+  position: relative; }
+  .page_slider .slide {
+    position: relative; }
+    .page_slider .slide img {
+      width: auto;
+      height: 515px;
+      overflow: hidden; }
+    .page_slider .slide .text-box {
+      position: absolute;
+      height: 147px;
+      width: 100%;
+      opacity: 0.7;
+      background-color: black;
+      bottom: 0; }
+      .page_slider .slide .text-box .text {
+        overflow: hidden;
+        color: #FFFFFF;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.6;
+        text-align: center;
+        width: 444px;
+        height: 95px;
+        margin: 1px auto; }
+  .page_slider .sliders-control {
+    padding: 10px 40px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0; }
+    .page_slider .sliders-control .prev-btn, .page_slider .sliders-control .next-btn {
+      display: block;
+      width: 40px;
+      height: 22px;
+      border: none; }
+    .page_slider .sliders-control .prev-btn {
+      background: linear-gradient(110deg, #2d3ed5 1%, #0189ff);
+      -webkit-background-clip: text;
+      color: transparent; }
+    .page_slider .sliders-control .next-btn {
+      background: linear-gradient(110deg, #0189ff 1%, #2d3ed5);
+      -webkit-background-clip: text;
+      color: transparent; }
+    .page_slider .sliders-control .slider-dots {
+      display: flex;
+      justify-content: space-between;
+      width: 138px; }
+      .page_slider .sliders-control .slider-dots .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #d8d8d8; }
+      .page_slider .sliders-control .slider-dots .dot-active {
+        background-color: #097af7;
+        margin-top: 2.5px;
+        margin-left: 2.5px; }
+      .page_slider .sliders-control .slider-dots .border-dot {
+        margin-top: -2.5px;
+        width: 19px;
+        height: 19px;
+        border-radius: 50%;
+        border: 1px #097af7 solid; }
+
+
+/*# sourceMappingURL=homework_7.css.map*/
