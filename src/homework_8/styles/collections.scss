@@ -1,0 +1,161 @@
+@mixin button () {
+  line-height: 1.67;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #000000;
+  font-weight: bold;
+  border: none;
+}
+@mixin button-buy () {
+  width: 112px;
+  height: 40px;
+}
+@mixin button-more () {
+  width: 180px;
+  height: 40px;
+}
+@mixin button-hover () {
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  color: #cccccc;
+}
+
+.collections {
+  margin: 65px auto;
+  h1 {
+    text-align: center;
+  }
+  &__baner {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 1140px;
+    height: 420px;
+    overflow: hidden;
+    .baner-img {
+      width: 100%;
+      height: 190%;
+    }
+    .label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: 100px;
+      height: 20px;
+      background-color: #ff5e1b;
+      top: 30px;
+      p {
+        color: #FFFFFF;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+    }
+    h2 {
+      position: absolute;
+      top: 150px;
+    }
+    .btn-buy {
+      position: absolute;
+      top: 250px;
+      @include button-buy ();
+      @include button ();
+    }
+    .btn-buy:hover {
+      @include button-hover ();
+    }
+  }
+  .collections__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .product {
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      height: 560px;
+      width: 361px;
+      &__img {
+        width: 361px;
+        height: 420px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      &__description {
+        width: 321px;
+        margin: 0 auto;
+        p {
+          font-size: 16px;
+          line-height: 1.56;
+          font-weight: normal;
+        }
+      }
+      &__btn {
+        width: 321px;
+        margin: 0 auto;
+        button {
+          @include button-buy ();
+          @include button ();
+        }
+        button:hover {
+          @include button-hover ();
+        }
+      }
+    }
+    .product-wide {
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      height: 560px;
+      width: 750px;
+      &__img {
+        width: 750px;
+        height: 420px;
+        overflow: hidden;
+        img {
+          width: auto;
+          height: 100%;
+        }
+      }
+      &__description {
+        width: 710px;
+        margin: 0 auto;
+        p {
+          font-size: 16px;
+          line-height: 1.56;
+          font-weight: normal;
+        }
+      }
+      &__btn {
+        width: 710px;
+        margin: 0 auto;
+        button {
+          @include button-buy ();
+          @include button ();
+        }
+        button:hover {
+          @include button-hover ();
+        }
+      }
+    }
+  }
+  &__btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    .btn-more {
+      @include button ();
+      @include button-more ();
+    }
+    .btn-more:hover {
+      @include button-hover ();
+    }
+  }
+}
