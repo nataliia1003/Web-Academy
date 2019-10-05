@@ -141,7 +141,7 @@ textarea {
     overflow: hidden; }
     .collections__baner .baner-img {
       width: 100%;
-      height: 190%; }
+      height: auto; }
     .collections__baner .label {
       display: flex;
       justify-content: center;
@@ -269,6 +269,75 @@ textarea {
     .collections__btn .btn-more:hover {
       box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
       color: #cccccc; }
+
+.footer {
+  padding-top: 41px;
+  width: 100vw;
+  height: 320px;
+  background-color: #33333a; }
+  .footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; }
+    .footer .footer-content__links {
+      display: flex;
+      flex-direction: column; }
+      .footer .footer-content__links .headline {
+        margin-bottom: 19px;
+        color: #FFFFFF;
+        font-size: 18px;
+        font-family: sans-serif;
+        line-height: 1.67; }
+      .footer .footer-content__links a {
+        font-family: sans-serif;
+        color: #dedede;
+        line-height: 1.79; }
+      .footer .footer-content__links p {
+        font-family: sans-serif;
+        color: #dedede;
+        line-height: 1.79; }
+      .footer .footer-content__links .phone-number {
+        margin-top: 22px; }
+      .footer .footer-content__links input {
+        width: 360px;
+        height: 40px;
+        padding-left: 10px;
+        border: solid 1px #666666;
+        background-color: #33333a;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.43; }
+      .footer .footer-content__links input::-webkit-input-placeholder {
+        color: #dedede; }
+      .footer .footer-content__links .icon-link {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 60px;
+        height: 22px; }
+        .footer .footer-content__links .icon-link .icon {
+          width: 24px;
+          height: 24px; }
+    .footer .footer-content__subscribe .subscribe-btn {
+      margin-top: 43px;
+      width: 166px;
+      height: 40px;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.67;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #33333a; }
+    .footer .footer-content__subscribe .subscribe-btn:hover {
+      box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+      color: #cccccc; }
+  .footer .footer-floor {
+    line-height: 1.79;
+    color: #dedede;
+    font-size: 14px;
+    margin: 50px auto;
+    text-align: center; }
 
 
 /*# sourceMappingURL=homework_8.css.map*/
