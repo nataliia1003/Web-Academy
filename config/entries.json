@@ -43,5 +43,11 @@
   ],
   "homework_8": [
     "./src/homework_8/homework_8.js"
+  ],
+  "practice_5": [
+    "./src/practice_5/practice_5.js"
+  ],
+  "homework_9": [
+    "./src/homework_9/homework_9.js"
   ]
 }

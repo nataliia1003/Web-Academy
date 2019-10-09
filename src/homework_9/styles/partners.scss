@@ -1,0 +1,13 @@
+.partners {
+  &__box {
+    width: 964px;
+    height: 43px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  &__logo {
+    height: 30px;
+    width: auto;
+  }
+}

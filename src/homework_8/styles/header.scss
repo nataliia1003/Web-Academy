@@ -33,9 +33,22 @@ $text-color: #33333a;
           color: #33333a;
         }
       }
+      &__item:hover {
+        a {
+          color: red;
+        }
+      }
+      &__icon {
+        font-size: 12px;
+        top: 50%;
+        transform: rotate(90deg);
+      }
       &__item-active {
         a {
           color: #ff5e1b;
+        }
+        .global-nav__icon {
+          transform: rotate(-90deg);
         }
       }
       &__logo {

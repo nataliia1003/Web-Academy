@@ -95,7 +95,7 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _about_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./about.scss */ "./src/about/about.scss");
+/* harmony import */ var _about_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./matter.scss */ "./src/about/matter.scss");
 /* harmony import */ var _about_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_about_scss__WEBPACK_IMPORTED_MODULE_0__);
 
 
@@ -103,7 +103,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./src/about/about.scss":
 /*!******************************!*\
-  !*** ./src/about/about.scss ***!
+  !*** ./src/about/matter.scss ***!
   \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {

@@ -1,0 +1,20 @@
+.matter {
+  img {
+    width: 100%;
+  }
+  p {
+    margin-left: 30px;
+  }
+  &__info {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+  .mission {
+    color: #030303;
+    margin-bottom: 20px;
+  }
+  &__note {
+   @include note-text ();
+  }
+
+}

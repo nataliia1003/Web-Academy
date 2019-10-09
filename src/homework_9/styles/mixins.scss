@@ -1,0 +1,16 @@
+@mixin note-text () {
+  font-size: 12px;
+  line-height: 3.33;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+@mixin content-btn () {
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #000000;
+  font-weight: bold;
+  border: none;
+}

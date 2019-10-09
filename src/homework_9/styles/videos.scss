@@ -1,0 +1,30 @@
+.videos {
+
+  .video-box {
+    padding-right: 14px;
+    padding-left: 14px;
+    height: 310px;
+    width: 360px;
+    margin-bottom: 5px;
+    &__video {
+      height: 240px;
+      width: 360px;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+    }
+    &__name {
+      margin: 20px;
+    }
+
+  }
+  &__btn {
+    width: 118px;
+    height: 40px;
+    @include content-btn ();
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+}

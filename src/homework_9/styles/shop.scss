@@ -1,0 +1,36 @@
+.shop {
+  .category {
+    width: 263px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    &__img {
+      margin-left: 15px;
+      margin-right: 15px;
+      width: 100%;
+      height: 100%;
+
+      &:hover {
+        opacity:0.2;
+      }
+    }
+
+    &__text-box {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      height: 50px;
+      width: 100%;
+      bottom: 15%;
+      p {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 18px;
+        color: #030303;
+        line-height: 1.67;
+      }
+    }
+  }
+}
