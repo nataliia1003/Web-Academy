@@ -98,6 +98,45 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _homework_11_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./homework_11.scss */ "./src/homework_11/homework_11.scss");
 /* harmony import */ var _homework_11_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_homework_11_scss__WEBPACK_IMPORTED_MODULE_0__);
 
+var redColor = 'red';
+var yellowColor = 'yellow';
+var greenColor = 'green';
+var greyColor = '#ccc';
+var redButton = document.querySelector('.red-light');
+var yellowButton = document.querySelector('.yellow-light');
+var greenButton = document.querySelector('.green-light');
+
+function redClick(event) {
+  redButton.style.backgroundColor = redColor;
+  yellowButton.style.backgroundColor = greyColor;
+  greenButton.style.backgroundColor = greyColor;
+  event.stopPropagation();
+}
+
+function yellowClick(event) {
+  yellowButton.style.backgroundColor = yellowColor;
+  redButton.style.backgroundColor = greyColor;
+  greenButton.style.backgroundColor = greyColor;
+  event.stopPropagation();
+}
+
+function greenClick(event) {
+  greenButton.style.backgroundColor = greenColor;
+  redButton.style.backgroundColor = greyColor;
+  yellowButton.style.backgroundColor = greyColor;
+  event.stopPropagation();
+}
+
+function bodyClick() {
+  greenButton.style.backgroundColor = greyColor;
+  redButton.style.backgroundColor = greyColor;
+  yellowButton.style.backgroundColor = greyColor;
+}
+
+redButton.onclick = redClick;
+yellowButton.onclick = yellowClick;
+greenButton.onclick = greenClick;
+document.body.onclick = bodyClick;
 
 /***/ }),
 

@@ -1,3 +1,20 @@
+.traffic-light {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+  width: 250px;
+  height: 750px;
+  background-color: rgba(43, 15, 11, 0.75); }
+  .traffic-light .light {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    background-color: #cccccc;
+    outline: none;
+    cursor: pointer; }
 
 
 /*# sourceMappingURL=homework_11.css.map*/
