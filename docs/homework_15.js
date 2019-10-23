@@ -90,10 +90,70 @@
 /*!****************************************!*\
   !*** ./src/homework_15/homework_15.js ***!
   \****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\Users\\Natasha\\Desktop\\WebAcademy\\group_2708-master\\src\\homework_15\\homework_15.js: Unexpected token (3:16)\n\n\u001b[0m \u001b[90m 1 | \u001b[39m\u001b[36mimport\u001b[39m \u001b[32m'./homework_15.scss'\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 2 | \u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 3 | \u001b[39m\u001b[36mconst\u001b[39m container document\u001b[33m.\u001b[39mquerySelector(\u001b[32m'.clock'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m   | \u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 4 | \u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 5 | \u001b[39m\u001b[36mfunction\u001b[39m clock(\u001b[0m\n\u001b[0m \u001b[90m 6 | \u001b[39m    rootElement \u001b[33m=\u001b[39m document\u001b[33m.\u001b[39mquerySelector(\u001b[32m'body'\u001b[39m)\u001b[0m\n    at Object.raise (C:\\Users\\Natasha\\Desktop\\WebAcademy\\group_2708-master\\node_modules\\@babel\\parser\\lib\\index.js:6420:17)\n    at Object.unexpected (C:\\Users\\Natasha\\Desktop\\WebAcademy\\group_2708-master\\node_modules\\@babel\\parser\\lib\\index.js:7773:16)\n    at Object.parseVar (C:\\Users\\Natasha\\Desktop\\WebAcademy\\group_2708-master\\node_modules\\@babel\\parser\\lib\\index.js:10664:18)\n    at Object.parseVarStatement (C:\\Users\\Natasha\\Desktop\\WebAcademy\\group_2708-master\\node_modules\\@babel\\parser\\lib\\index.js:10479:10)\n    at Object.parseStatementContent (C:\\Users\\Natasha\\Desktop\\WebAcademy\\group_2708-master\\node_modules\\@babel\\parser\\lib\\index.js:10076:21)\n    at Object.parseStatement (C:\\Users\\Natasha\\Desktop\\WebAcademy\\group_2708-master\\node_modules\\@babel\\parser\\lib\\index.js:10009:17)\n    at Object.parseBlockOrModuleBlockBody (C:\\Users\\Natasha\\Desktop\\WebAcademy\\group_2708-master\\node_modules\\@babel\\parser\\lib\\index.js:10585:25)\n    at Object.parseBlockBody (C:\\Users\\Natasha\\Desktop\\WebAcademy\\group_2708-master\\node_modules\\@babel\\parser\\lib\\index.js:10572:10)\n    at Object.parseTopLevel (C:\\Users\\Natasha\\Desktop\\WebAcademy\\group_2708-master\\node_modules\\@babel\\parser\\lib\\index.js:9940:10)\n    at Object.parse (C:\\Users\\Natasha\\Desktop\\WebAcademy\\group_2708-master\\node_modules\\@babel\\parser\\lib\\index.js:11447:17)\n    at parse (C:\\Users\\Natasha\\Desktop\\WebAcademy\\group_2708-master\\node_modules\\@babel\\parser\\lib\\index.js:11483:38)\n    at parser (C:\\Users\\Natasha\\Desktop\\WebAcademy\\group_2708-master\\node_modules\\@babel\\core\\lib\\transformation\\normalize-file.js:168:34)\n    at normalizeFile (C:\\Users\\Natasha\\Desktop\\WebAcademy\\group_2708-master\\node_modules\\@babel\\core\\lib\\transformation\\normalize-file.js:102:11)\n    at runSync (C:\\Users\\Natasha\\Desktop\\WebAcademy\\group_2708-master\\node_modules\\@babel\\core\\lib\\transformation\\index.js:44:43)\n    at runAsync (C:\\Users\\Natasha\\Desktop\\WebAcademy\\group_2708-master\\node_modules\\@babel\\core\\lib\\transformation\\index.js:35:14)\n    at C:\\Users\\Natasha\\Desktop\\WebAcademy\\group_2708-master\\node_modules\\@babel\\core\\lib\\transform.js:34:34\n    at processTicksAndRejections (internal/process/task_queues.js:75:11)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _homework_15_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./homework_15.scss */ "./src/homework_15/homework_15.scss");
+/* harmony import */ var _homework_15_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_homework_15_scss__WEBPACK_IMPORTED_MODULE_0__);
+
+var hours;
+var dots1;
+var minutes;
+var dots2;
+var seconds;
+var container = document.querySelector('.clock');
+
+function clock() {
+  var rootElement = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : document.querySelector('body');
+  var clock = document.createElement('div');
+  hours = document.createElement('span');
+  dots1 = document.createElement('span');
+  minutes = document.createElement('span');
+  dots2 = document.createElement('span');
+  seconds = document.createElement('span');
+  clock.appendChild(hours);
+  clock.appendChild(dots1);
+  clock.appendChild(minutes);
+  clock.appendChild(dots2);
+  clock.appendChild(seconds);
+  rootElement.appendChild(clock);
+  clock.classList.add('clock');
+  hours.classList.add('clock__hours');
+  dots1.classList.add('clock__dots');
+  minutes.classList.add('clock__minutes');
+  dots2.classList.add('clock__dots');
+  seconds.classList.add('clock__seconds');
+}
+
+function normalisedDate(num) {
+  return num < 10 ? '0' + num : num;
+}
+
+function updateContent() {
+  var currentDate = new Date();
+  hours.textContent = normalisedDate(currentDate.getHours());
+  minutes.textContent = normalisedDate(currentDate.getMinutes());
+  seconds.textContent = normalisedDate(currentDate.getSeconds());
+  dots1.textContent = dots1.textContent === ':' ? '' : ':';
+  dots2.textContent = dots2.textContent === ':' ? '' : ':';
+}
+
+clock();
+updateContent();
+setInterval(updateContent, 1000);
+
+/***/ }),
+
+/***/ "./src/homework_15/homework_15.scss":
+/*!******************************************!*\
+  !*** ./src/homework_15/homework_15.scss ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
 
 /***/ }),
 
