@@ -1,0 +1,32 @@
+.garlands {
+  display: flex;
+  flex-direction: row;
+}
+.garland {
+  display: flex;
+  margin: 200px auto;
+  width: 300px;
+  flex-direction: column;
+
+
+
+  &__light-bulb {
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #ccc;
+  }
+  &__btn {
+    margin: 30px auto;
+    text-align: center;
+    height: 40px;
+    width: 100px;
+    background-color: red;
+    cursor: pointer;
+    color: #fff;
+    &-active {
+      background-color: green;
+    }
+  }
+}

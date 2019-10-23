@@ -1,0 +1,26 @@
+.calculator {
+  width: 400px;
+  background: #efefef;
+  padding: 20px;
+  margin: 0 auto;
+  &__operand {
+    outline: none;
+    width: 50%;
+    box-sizing: border-box;
+    border: 1px solid #efefef;
+    &:focus {
+      border: 1px solid rgb(96, 189, 96);
+    }
+    &_error {
+      border-color: red;
+    }
+  }
+  &__row {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+    &:empty {
+      display: none;
+    }
+  }
+}

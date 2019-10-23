@@ -1,0 +1,12 @@
+.lamp {
+  min-width: 70px;
+  margin: 10px;
+  display: inline-block; }
+  .lamp__light {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50%; }
+
+
+/*# sourceMappingURL=practice_7.css.map*/

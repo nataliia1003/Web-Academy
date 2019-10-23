@@ -1,0 +1,28 @@
+.garlands {
+  display: flex;
+  flex-direction: row; }
+
+.garland {
+  display: flex;
+  margin: 200px auto;
+  width: 300px;
+  flex-direction: column; }
+  .garland__light-bulb {
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #ccc; }
+  .garland__btn {
+    margin: 30px auto;
+    text-align: center;
+    height: 40px;
+    width: 100px;
+    background-color: red;
+    cursor: pointer;
+    color: #fff; }
+    .garland__btn-active {
+      background-color: green; }
+
+
+/*# sourceMappingURL=homework_14.css.map*/

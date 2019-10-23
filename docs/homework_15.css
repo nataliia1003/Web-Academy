@@ -1,0 +1,17 @@
+.clock {
+  width: 850px;
+  height: 270px;
+  border: 10px solid #000000;
+  border-radius: 50px;
+  margin: 300px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .clock__hours, .clock__minutes, .clock__seconds, .clock__dots {
+    margin: 20px;
+    font-size: 150px;
+    font-weight: bold; }
+
+
+/*# sourceMappingURL=homework_15.css.map*/
