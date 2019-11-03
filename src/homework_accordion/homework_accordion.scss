@@ -1,0 +1,14 @@
+.accordion {
+  margin: 0 auto;
+
+  &__body {
+    height: 0;
+    overflow: hidden;
+  }
+
+  &.active {
+    .accordion__body {
+      height: 100%;
+    }
+  }
+}

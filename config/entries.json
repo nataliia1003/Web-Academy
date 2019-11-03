@@ -70,5 +70,11 @@
   ],
   "homework_16": [
     "./src/homework_16/homework_16.js"
+  ],
+  "homework_17": [
+    "./src/homework_17/homework_17.js"
+  ],
+  "homework_accordion": [
+    "./src/homework_accordion/homework_accordion.js"
   ]
 }

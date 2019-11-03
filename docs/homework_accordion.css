@@ -1,0 +1,10 @@
+.accordion {
+  margin: 0 auto; }
+  .accordion__body {
+    height: 0;
+    overflow: hidden; }
+  .accordion.active .accordion__body {
+    height: 100%; }
+
+
+/*# sourceMappingURL=homework_accordion.css.map*/
