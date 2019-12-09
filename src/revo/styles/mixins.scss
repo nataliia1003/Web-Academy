@@ -1,0 +1,25 @@
+/*
+@mixin note-text () {
+  font-size: 12px;
+  line-height: 3.33;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+*/
+@mixin content-btn () {
+  width: 134px;
+  height: 32px;
+  border-radius: 19px;
+  border: none;
+  background-color: #c7a17a;
+  color: #f9fbff;
+  text-align: center;
+  cursor: pointer;
+  transition: filter .2s ease;
+
+  &:hover {
+    filter: brightness(70%);
+  }
+}
+

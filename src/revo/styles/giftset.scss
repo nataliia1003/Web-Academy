@@ -1,0 +1,131 @@
+@import "mixins.scss";
+.giftset {
+  height: 802px;
+  margin-top: 0;
+  &__content {
+    position: relative;
+    margin-top: 85px;
+  }
+  .slider-btn {
+
+  }
+  &__light-beckground {
+    position: absolute;
+    left: 0;
+    width: 75.6vw;
+    height: 802px;
+    background-color: #edf0f5;
+  }
+  &__tabs-content {
+    padding-right: 0;
+    box-shadow: 1px 0 10px 0 rgba(205, 205, 205, 0.5);
+  }
+
+  &__tabs-links {
+    padding-left: 0;
+
+    button {
+      border: 0;
+      cursor: pointer;
+      transition: filter .2s ease;
+
+      &:not(.active):hover {
+        filter: brightness(70%);
+      }
+    }
+  }
+
+  &__tab-content {
+    display: none;
+  }
+
+  &__tab-content.active {
+    display: flex;
+    position: relative;
+  }
+
+  &__img {
+    display: flex;
+    position: absolute;
+    left: -250px;
+    height: 460px;
+    align-items: center;
+
+    img {
+      width: 463px;
+      height: 409px;
+    }
+  }
+  &__box {
+    display: flex;
+    background-color: #fff;
+    width: 882px;
+    height: 460px;
+    padding: 64px 5% 64px 30%;
+    justify-content: space-between;
+    flex-direction: column;
+    &-price {
+      color: #c7a17a;
+    }
+  }
+  &__specification {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &-tipe {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 226px;
+      .logo {
+        height: auto;
+        width: 40px;
+      }
+      p {
+        width: 150px;
+      }
+    }
+    &-hight {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 226px;
+      .logo {
+        height: auto;
+        width: 40px;
+      }
+      p {
+        width: 174px;
+      }
+    }
+  }
+  .buy {
+    @include content-btn
+  }
+  .details {
+    color: #415167;
+  }
+  .tab-link {
+    width: 100%;
+    display: block;
+    height: 33.33%;
+    opacity: 0.3;
+    background-color: #edf0f5;
+    font-size: 30px;
+    font-weight: 900;
+    transition: all .2s;
+
+    &.active {
+      opacity: 1;
+      background-color: #fff;
+      box-shadow: 1px 0 10px 0 rgba(205, 205, 205, 0.5);
+      border-left: solid 1px #edf0f5;
+      color: #415167;
+      pointer-events: none;
+    }
+  }
+  .choose {
+    display: flex;
+    justify-content: space-around;
+  }
+}

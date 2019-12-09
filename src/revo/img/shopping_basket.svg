@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>87A07A02-E53E-4AE4-9DFF-D9A9021B0DB7</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-1182.000000, -86.000000)">
+            <g id="MENU" transform="translate(1126.000000, 0.000000)" fill="#415167">
+                <rect id="Rectangle" x="0" y="0" width="328" height="768"></rect>
+            </g>
+            <g id="navigation" transform="translate(180.000000, 72.000000)">
+                <g id="CART" transform="translate(1002.000000, 2.000000)">
+                    <g id="IC_CART" transform="translate(0.000000, 12.000000)">
+                        <rect id="BASE" fill="#415167" x="0" y="0" width="24" height="24"></rect>
+                        <g id="shopping-cart-3" transform="translate(12.000000, 12.000000) scale(-1, 1) translate(-12.000000, -12.000000) translate(3.000000, 3.000000)" fill-rule="nonzero">
+                            <path d="M16.6824451,1.6638816 L3.27271681,1.6638816 C3.23233184,1.6638816 3.19547528,1.67932438 3.15762156,1.69090647 L2.82802189,0.58959444 C2.72320506,0.239363098 2.40549461,0 2.04544321,0 L0.409103984,0 C0.183170585,0 0,0.186249292 0,0.41598015 L0,1.24790145 C0,1.47763231 0.183170585,1.6638816 0.409103984,1.6638816 L1.43943852,1.6638816 L3.99546591,10.2045971 L3.04083881,11.3370287 C2.66352888,11.7845964 2.49362819,12.4012937 2.66728741,12.9637073 C2.88938557,13.6830055 3.51372267,14.1428571 4.23355698,14.1428571 L15.9545568,14.1428571 C16.1804902,14.1428571 16.3636608,13.9566079 16.3636608,13.726877 L16.3636608,12.8949557 C16.3636608,12.6652248 16.1804902,12.4789755 15.9545568,12.4789755 L4.23351863,12.4789755 L5.53032495,10.940625 C5.56292441,10.9019401 5.58689459,10.8582635 5.61163183,10.8150939 L13.5391673,10.8150939 C14.1732459,10.8150939 14.7502562,10.4427513 15.0202564,9.85939641 L17.8749715,3.6912535 C17.9568537,3.51373952 18,3.31672708 18,3.12131351 L18,3.00350381 C18,2.26369324 17.4101033,1.6638816 16.6824451,1.6638816 Z" id="Shape" fill="#F9FBFF"></path>
+                            <circle id="Oval" fill="#FFFFFF" cx="4.82142857" cy="16.3928571" r="1.60714286"></circle>
+                            <circle id="Oval" fill="#FFFFFF" cx="14.4642857" cy="16.3928571" r="1.60714286"></circle>
+                        </g>
+                    </g>
+                    <g>
+                        <circle id="BASE" fill="#C7A17A" cx="26" cy="12" r="10"></circle>
+                        <rect id="Rectangle-3" x="0" y="0" width="38" height="38"></rect>
+                        <text id="2" font-family=".AppleSystemUIFont" font-size="14" font-weight="normal" fill="#F9FBFF">
+                            <tspan x="22.3636364" y="16.8181818">2</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

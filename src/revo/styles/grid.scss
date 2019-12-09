@@ -1,0 +1,53 @@
+$col-counts: 12;
+$min-col-size: 100%/$col-counts;
+
+[class*='col-'] {
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 0 0.5rem;
+}
+
+@for $i from 1 through $col-counts {
+  .col-lg-#{$i} {
+    width: #{$i * $min-col-size};
+    flex-basis: #{$i * $min-col-size};
+  }
+}
+
+@media screen and (max-width: 992px - 1px) {
+  @for $i from 1 through $col-counts {
+    .col-md-#{$i} {
+      width: #{$i * $min-col-size};
+      flex-basis: #{$i * $min-col-size};
+    }
+  }
+}
+
+@media screen and (max-width: 768px - 1px) {
+  @for $i from 1 through $col-counts {
+    .col-sm-#{$i} {
+      width: #{$i * $min-col-size};
+      flex-basis: #{$i * $min-col-size};
+    }
+  }
+}
+
+@media screen and (max-width: 575px - 1px) {
+  @for $i from 1 through $col-counts {
+    .col-xs-#{$i} {
+      width: #{$i * $min-col-size};
+      flex-basis: #{$i * $min-col-size};
+    }
+  }
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  word-break: break-word;
+}
+
+
+
+

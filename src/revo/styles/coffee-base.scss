@@ -1,0 +1,19 @@
+.coffee-base {
+  &__components {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__component {
+    max-width: 226px;
+    display: flex;
+    height: 229px;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .text-box {
+      height: 106px;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+}

@@ -76,5 +76,11 @@
   ],
   "homework_accordion": [
     "./src/homework_accordion/homework_accordion.js"
+  ],
+  "practice_8": [
+    "./src/practice_8/practice_8.js"
+  ],
+  "revo": [
+    "./src/revo/revo.js"
   ]
 }
