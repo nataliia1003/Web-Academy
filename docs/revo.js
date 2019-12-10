@@ -99,8 +99,8 @@ __webpack_require__.r(__webpack_exports__);
 function chooseFavorite() {
   var leftButton = document.querySelector('.slider-btn.prev-btn');
   var rightButton = document.querySelector('.slider-btn.next-btn');
-  var grid = document.querySelector('.grid.slider-grid');
-  grid.style.marginLeft = '0px';
+  var grid = document.querySelector('.grid.slider-grid'); // grid.style.marginLeft = '0px';
+
   var sliderWidth = 570;
   var sliderCount = grid.children.length;
 
@@ -110,14 +110,14 @@ function chooseFavorite() {
 
   var currentSlide = 0;
   leftButton.addEventListener('click', function () {
-    grid.style.marginLeft = parseInt(grid.style.marginLeft, 10) + sliderWidth + 'px';
+    grid.style.marginLeft = grid.offsetLeft + sliderWidth + 'px';
     currentSlide -= 1;
     checkButtons();
     grid.children[currentSlide].classList.add('active');
     grid.children[currentSlide + 2].classList.remove('active');
   });
   rightButton.addEventListener('click', function () {
-    grid.style.marginLeft = parseInt(grid.style.marginLeft, 10) - sliderWidth + 'px';
+    grid.style.marginLeft = grid.offsetLeft - sliderWidth + 'px';
     currentSlide += 1;
     checkButtons();
     grid.children[currentSlide - 1].classList.remove('active');

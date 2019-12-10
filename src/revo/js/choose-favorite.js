@@ -3,7 +3,7 @@ function chooseFavorite() {
     const rightButton = document.querySelector('.slider-btn.next-btn');
 
     const grid = document.querySelector('.grid.slider-grid');
-    grid.style.marginLeft = '0px';
+    // grid.style.marginLeft = '0px';
 
     const sliderWidth = 570;
 
@@ -16,7 +16,7 @@ function chooseFavorite() {
     let currentSlide = 0;
 
     leftButton.addEventListener('click', function () {
-        grid.style.marginLeft = parseInt(grid.style.marginLeft, 10) + sliderWidth + 'px';
+        grid.style.marginLeft = grid.offsetLeft + sliderWidth + 'px';
 
         currentSlide -= 1;
         checkButtons();
@@ -26,7 +26,7 @@ function chooseFavorite() {
     });
 
     rightButton.addEventListener('click', function () {
-        grid.style.marginLeft = parseInt(grid.style.marginLeft, 10) - sliderWidth + 'px';
+        grid.style.marginLeft = grid.offsetLeft - sliderWidth + 'px';
 
         currentSlide += 1;
         checkButtons();
