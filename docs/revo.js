@@ -238,6 +238,32 @@ function giftset() {
 
 /***/ }),
 
+/***/ "./src/revo/js/mobile-menu.js":
+/*!************************************!*\
+  !*** ./src/revo/js/mobile-menu.js ***!
+  \************************************/
+/*! exports provided: mobileMenu */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mobileMenu", function() { return mobileMenu; });
+function mobileMenu() {
+  var menuButton = document.querySelector('.btn-mobile-menu');
+  var mobileMenu = document.querySelector('.mobile-menu');
+  menuButton.addEventListener('click', function () {
+    if (mobileMenu.classList.contains('active')) {
+      mobileMenu.classList.remove('active');
+    } else {
+      mobileMenu.classList.add('active');
+    }
+  });
+}
+
+
+
+/***/ }),
+
 /***/ "./src/revo/revo.js":
 /*!**************************!*\
   !*** ./src/revo/revo.js ***!
@@ -252,6 +278,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_choose_favorite__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/choose-favorite */ "./src/revo/js/choose-favorite.js");
 /* harmony import */ var _js_combo_coffee__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/combo-coffee */ "./src/revo/js/combo-coffee.js");
 /* harmony import */ var _js_giftset__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/giftset */ "./src/revo/js/giftset.js");
+/* harmony import */ var _js_mobile_menu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/mobile-menu */ "./src/revo/js/mobile-menu.js");
+
 
 
 
@@ -259,6 +287,7 @@ __webpack_require__.r(__webpack_exports__);
 Object(_js_choose_favorite__WEBPACK_IMPORTED_MODULE_1__["chooseFavorite"])();
 Object(_js_combo_coffee__WEBPACK_IMPORTED_MODULE_2__["comboCoffee"])();
 Object(_js_giftset__WEBPACK_IMPORTED_MODULE_3__["giftset"])();
+Object(_js_mobile_menu__WEBPACK_IMPORTED_MODULE_4__["mobileMenu"])();
 
 /***/ }),
 

@@ -1,11 +1,18 @@
 @import "mixins.scss";
 .choose-favorite {
-  height: 894px;
   display: flex;
+  height: auto;
+  min-height: 894px;
+  &__dark_background {
+    position: absolute;
+    left: 0;
+    width: 27vw;
+    height: 112%;
+    background-color: #415167;
+  }
   &__content {
     position: relative;
-    max-width: 100%;
-    margin-top: 90px;
+    width: 100%;
     justify-content: center;
     .slider {
       position: relative;
@@ -56,17 +63,10 @@
     }
 
   }
-  &__dark_background {
-    position: absolute;
-    left: 0;
-    width: 27vw;
-    height: 894px;
-    background-color: #415167;
-  }
-
   &__product {
     max-width: 560px;
-    height: 256px;
+    min-height: 256px;
+    height: auto;
     display: flex;
     flex-direction: row;
     background-color: #fff;
@@ -83,7 +83,7 @@
     }
     &-info {
       max-width: 229px;
-      height: 172px;
+      min-height: 172px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -111,6 +111,7 @@
       .slider {
         &-grid {
           margin-left: calc((100vw - 560px)/2);
+          margin-bottom: 80px;
           .slider-item {
             width: 100%;
           }
@@ -134,19 +135,33 @@
 @media screen and (max-width: 585px) {
   .choose-favorite {
     height: auto;
-    .slider-grid {
-      margin-left: calc((100vw - 236px)/2);
+    &__dark_background {
+      display: none;
+    }
+    &__content {
+      .slider-grid {
+        margin-left: calc((100vw - 236px)/2);
+        .slider-item {
+          display: flex;
+        }
+      }
     }
     &__product {
       flex-direction: column;
       height: auto;
       max-width: 236px;
-      margin-top: 20px;
+      margin-right: 20px;
       img {
+        width: 100%;
+        height: auto;
         margin-bottom: 20px;
       }
       &-info {
-        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+        padding: 10px 10% 10% 10%;
         .choose {
           flex-direction: column-reverse;
           button {
@@ -155,7 +170,7 @@
         }
       }
     }
+
+
   }
-
-
 }

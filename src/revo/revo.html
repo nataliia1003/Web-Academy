@@ -15,34 +15,71 @@
 
   <div class="page-container">
     <header class="baner">
-      <div class="grid">
+      <div class="mobile-header">
+        <div class="header-logo">
+          <img src="./img/baner-logo.jpg" alt="logo">
+        </div>
+        <div class="header-buttons">
+          <button class="btn-shopping">
+            <img src="./img/cart.png" alt="shopping basket">
+          </button>
+          <button class="btn-mobile-menu">...</button>
+        </div>
+      </div>
+
+      <div class="mobile-menu">
+        <ul class="mobile-menu-items">
+          <li class="mobile-menu-item">
+            <a href="#">TRANG CHỦ</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="#">COFFEE</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="#">PHIN MẠ MÀU</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="#">COMBO PHIN PHÊ</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="#">GIFTSET</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="#">LIÊN HỆ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="grid baner-content">
+
+
         <div class="col-lg-2 col-md-2 baner__menu">
-              <img class="shopping-basket" src="./img/cart.png" alt="shopping basket">
-              <ul class="baner__menu-items">
-                <li class="baner__menu-item">
-                  <a href="#">TRANG CHỦ</a>
-                </li>
-                <li class="baner__menu-item">
-                  <a href="#">COFFEE</a>
-                </li>
-                <li class="baner__menu-item">
-                  <a href="#">PHIN MẠ MÀU</a>
-                </li>
-                <li class="baner__menu-item">
-                  <a href="#">COMBO PHIN PHÊ</a>
-                </li>
-                <li class="baner__menu-item">
-                  <a href="#">GIFTSET</a>
-                </li>
-                <li class="baner__menu-item">
-                  <a href="#">LIÊN HỆ</a>
-                </li>
-              </ul>
-            </div>
-        <div class="col-lg-3 col-md-3 baner__logo-info">
+          <button class="btn-shopping-basket">
+            <img class="shopping-basket" src="./img/cart.png" alt="shopping basket">
+          </button>
+          <ul class="baner__menu-items">
+            <li class="baner__menu-item">
+              <a href="#">TRANG CHỦ</a>
+            </li>
+            <li class="baner__menu-item">
+              <a href="#">COFFEE</a>
+            </li>
+            <li class="baner__menu-item">
+              <a href="#">PHIN MẠ MÀU</a>
+            </li>
+            <li class="baner__menu-item">
+              <a href="#">COMBO PHIN PHÊ</a>
+            </li>
+            <li class="baner__menu-item">
+              <a href="#">GIFTSET</a>
+            </li>
+            <li class="baner__menu-item">
+              <a href="#">LIÊN HỆ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 baner__logo-info">
               <div class="baner__logo">
-                <p class="baner__logo-name">REVO</p>
-                <p class="baner__logo-text">your personalized coffee</p>
+                <img src="./img/baner-logo.jpg" alt="logo">
               </div>
               <div class="baner__header">
                 <h1>YOUR</h1>
@@ -50,7 +87,8 @@
                 <h1>COFFEE</h1>
               </div>
             </div>
-        <div class="col-lg-7 col-md-7 baner__video">
+        <div class="col-lg-7 col-md-7 col-sm-8 col-xs-12 baner__video">
+          <img class="video" src="./img/video2.jpg" alt="video">
           <img class="baner__video-play-button" src="./img/round-play-button.svg" alt="play button">
         </div>
 
@@ -336,13 +374,13 @@
         <h4>Best Gift For Best Friend</h4>
         <h2>GIFTSET</h2>
           <div class="grid">
-            <div class="col-lg-3"></div>
-            <div class="col-lg-8 giftset__tabs-content" >
+            <div class="col-lg-3 col-md-3"></div>
+            <div class="col-lg-8 col-md-8 giftset__tabs-content" >
 
               <div class="giftset__tab-content active">
 
                 <div class="giftset__img">
-                  <img src="./img/giftset_img1.jpg" alt="img1">
+                  <img src="./img/giftset_img.png" alt="img1">
                 </div>
 
                 <div class="giftset__box">
@@ -354,11 +392,11 @@
                   <div class="giftset__specification">
                     <div class="giftset__specification-tipe">
                       <img class="logo" src="./img/coffe-logo.svg" alt="tipe">
-                      <p>Loại hạt Fine Robusta Blend</p>
+                      <p>Loại hạt <br>Fine Robusta Blend</p>
                     </div>
                     <div class="giftset__specification-hight">
                       <img class="logo" src="./img/mountain-logo.svg" alt="hight">
-                      <p>Độ cao 700 - 800m</p>
+                      <p>Độ cao <br>700 - 800m</p>
                     </div>
                   </div>
                   <div class="choose">
@@ -372,7 +410,7 @@
               <div class="giftset__tab-content">
 
                 <div class="giftset__img">
-                  <img src="./img/giftset_img1.jpg" alt="img1">
+                  <img src="./img/giftset_img.png" alt="img1">
                 </div>
 
                 <div class="giftset__box">
@@ -384,11 +422,11 @@
                   <div class="giftset__specification">
                     <div class="giftset__specification-tipe">
                       <img class="logo" src="./img/coffe-logo.svg" alt="tipe">
-                      <p>Loại hạt Fine Robusta Blend</p>
+                      <p>Loại hạt <br>Fine Robusta Blend</p>
                     </div>
                     <div class="giftset__specification-hight">
                       <img class="logo" src="./img/mountain-logo.svg" alt="hight">
-                      <p>Độ cao 700 - 800m</p>
+                      <p>Độ cao <br>700 - 800m</p>
                     </div>
                   </div>
                   <div class="choose">
@@ -402,7 +440,7 @@
               <div class="giftset__tab-content">
 
                 <div class="giftset__img">
-                  <img src="./img/giftset_img1.jpg" alt="img1">
+                  <img src="./img/giftset_img.png" alt="img1">
                 </div>
 
                 <div class="giftset__box">
@@ -414,11 +452,11 @@
                   <div class="giftset__specification">
                     <div class="giftset__specification-tipe">
                       <img class="logo" src="./img/coffe-logo.svg" alt="tipe">
-                      <p>Loại hạt Fine Robusta Blend</p>
+                      <p>Loại hạt <br>Fine Robusta Blend</p>
                     </div>
                     <div class="giftset__specification-hight">
                       <img class="logo" src="./img/mountain-logo.svg" alt="hight">
-                      <p>Độ cao 700 - 800m</p>
+                      <p>Độ cao <br>700 - 800m</p>
                     </div>
                   </div>
                   <div class="choose">
@@ -431,7 +469,7 @@
 
             </div>
 
-            <div class="col-lg-1 giftset__tabs-links">
+            <div class="col-lg-1 col-md-1 giftset__tabs-links">
               <button class="tab-link active">
                 <p class="tab">1</p>
               </button>
@@ -464,7 +502,7 @@
           </button>
 
           <div class="grid combo-coffee__slider-grid">
-            <div class="col-lg-4 combo-coffee__slider-item active">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 combo-coffee__slider-item active">
               <div class="combo-coffee__box">
                 <img class="combo-coffee__box-img" src="./img/combo-dam.jpg" alt="dam">
                 <div class="combo-coffee__box-info">
@@ -481,7 +519,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 combo-coffee__slider-item active">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 combo-coffee__slider-item active">
               <div class="combo-coffee__box">
                 <img class="combo-coffee__box-img" src="./img/combo-everyday.jpg" alt="everyday">
                 <div class="combo-coffee__box-info">
@@ -498,7 +536,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 combo-coffee__slider-item active">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 combo-coffee__slider-item active">
               <div class="combo-coffee__box">
                 <img class="combo-coffee__box-img" src="./img/combo-honey.jpg" alt="honey">
                 <div class="combo-coffee__box-info">
@@ -515,7 +553,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 combo-coffee__slider-item">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 combo-coffee__slider-item">
               <div class="combo-coffee__box">
                 <img class="combo-coffee__box-img" src="./img/combo-dam.jpg" alt="dam">
                 <div class="combo-coffee__box-info">
@@ -532,7 +570,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 combo-coffee__slider-item">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 combo-coffee__slider-item">
               <div class="combo-coffee__box">
                 <img class="combo-coffee__box-img" src="./img/combo-everyday.jpg" alt="everyday">
                 <div class="combo-coffee__box-info">
@@ -549,7 +587,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 combo-coffee__slider-item">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 combo-coffee__slider-item">
               <div class="combo-coffee__box">
                 <img class="combo-coffee__box-img" src="./img/combo-honey.jpg" alt="honey">
                 <div class="combo-coffee__box-info">
@@ -566,7 +604,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 combo-coffee__slider-item">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 combo-coffee__slider-item">
               <div class="combo-coffee__box">
                 <img class="combo-coffee__box-img" src="./img/combo-dam.jpg" alt="dam">
                 <div class="combo-coffee__box-info">
@@ -583,7 +621,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 combo-coffee__slider-item">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 combo-coffee__slider-item">
               <div class="combo-coffee__box">
                 <img class="combo-coffee__box-img" src="./img/combo-everyday.jpg" alt="everyday">
                 <div class="combo-coffee__box-info">
@@ -600,7 +638,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 combo-coffee__slider-item">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 combo-coffee__slider-item">
               <div class="combo-coffee__box">
                 <img class="combo-coffee__box-img" src="./img/combo-honey.jpg" alt="honey">
                 <div class="combo-coffee__box-info">

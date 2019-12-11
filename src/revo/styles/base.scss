@@ -55,8 +55,10 @@ h2 {
 h3 {
   font-size: 1.75rem;
   color: #232c38;
+
 }
 h4 {
+  padding-top: 85px;
   font-size: 1.25rem;
   text-align: center;
   color: #415167;
@@ -78,9 +80,10 @@ textarea {
   width: 100%;
   max-width: $container-max-width;
   margin: 0 auto;
+  padding: 0;
 }
 section {
-  padding-top: 85px;
-  padding-bottom: 43px;
+  padding: 0;
+  margin: 0;
 }
 

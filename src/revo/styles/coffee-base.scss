@@ -1,14 +1,16 @@
 .coffee-base {
+  min-height: 598px;
   &__components {
     display: flex;
     justify-content: space-between;
   }
   &__component {
     display: flex;
-    height: 229px;
+    min-height: 229px;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 30px;
+    margin-bottom: 30px;
 
     .text-box {
       height: 106px;
@@ -17,5 +19,10 @@
       width: 85%;
       margin: 0 auto;
     }
+  }
+}
+@media screen and (max-width: 768px - 1px) {
+  .coffee-base__components {
+    margin-bottom: 50px;
   }
 }
