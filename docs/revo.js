@@ -211,28 +211,42 @@ function comboCoffee() {
   var leftButton = document.querySelector('.combo-coffee__slider-btn.combo-coffee__prev-btn');
   var rightButton = document.querySelector('.combo-coffee__slider-btn.combo-coffee__next-btn');
   var grid = document.querySelector('.grid.combo-coffee__slider-grid');
-  grid.style.marginLeft = '0px';
-  var sliderWidth = 380;
-  var sliderCount = grid.children.length;
+  var width = window.innerWidth;
+  var sliderWidth = grid.children[0].clientWidth;
+  var mediumWidth = 767;
+  var smallWidth = 574;
+  var slidersPerScreen;
 
-  if (sliderCount > 3) {
-    rightButton.style.display = 'block';
+  if (width > mediumWidth) {
+    slidersPerScreen = 3;
+  } else if (width <= mediumWidth && width > smallWidth) {
+    slidersPerScreen = 2;
+  } else {
+    slidersPerScreen = 1;
   }
 
+  var sliderCount = grid.children.length;
+  rightButton.style.display = 'block';
   var currentSlide = 0;
+
+  if (slidersPerScreen === 1) {
+    console.log(width, sliderWidth);
+    grid.style.marginLeft = (width - sliderWidth) / 2 + 'px';
+  }
+
   leftButton.addEventListener('click', function () {
-    grid.style.marginLeft = parseInt(grid.style.marginLeft, 10) + sliderWidth + 'px';
+    grid.style.marginLeft = grid.offsetLeft + sliderWidth + 'px';
     currentSlide -= 1;
     checkButtons();
     grid.children[currentSlide].classList.add('active');
-    grid.children[currentSlide + 3].classList.remove('active');
+    grid.children[currentSlide + slidersPerScreen].classList.remove('active');
   });
   rightButton.addEventListener('click', function () {
-    grid.style.marginLeft = parseInt(grid.style.marginLeft, 10) - sliderWidth + 'px';
+    grid.style.marginLeft = grid.offsetLeft - sliderWidth + 'px';
     currentSlide += 1;
     checkButtons();
     grid.children[currentSlide - 1].classList.remove('active');
-    grid.children[currentSlide + 2].classList.add('active');
+    grid.children[currentSlide + slidersPerScreen - 1].classList.add('active');
   });
 
   function checkButtons() {

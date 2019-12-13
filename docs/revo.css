@@ -793,7 +793,8 @@ section {
     max-width: 360px;
     height: 100%;
     background-color: #fff;
-    box-shadow: 0 4px 24px 0 rgba(205, 205, 205, 0.5); }
+    box-shadow: 0 4px 24px 0 rgba(205, 205, 205, 0.5);
+    margin: 0 auto; }
     .combo-coffee__box-img {
       width: 100%;
       height: auto; }
