@@ -397,6 +397,10 @@ section {
   .baner__logo {
     display: none; } }
 
+@media screen and (max-width: 475px) {
+  .baner__header h1 {
+    font-size: 36px; } }
+
 .coffee-base {
   min-height: 598px; }
   .coffee-base__components {
@@ -440,7 +444,7 @@ section {
     height: 112%;
     background-color: #415167;
     z-index: -1; }
-    @media screen and (max-width: 585px) {
+    @media screen and (max-width: 755px) {
       .page-container__choose-favorite:after {
         display: none; } }
 
