@@ -2,13 +2,7 @@
 .combo-coffee {
   height: auto;
   min-height: 906px;
-  &__dark-beckground {
-    position: absolute;
-    right: 0;
-    width: 23vw;
-    background-color: #415167;
-    height: 106.6%;
-  }
+
   &__content {
     position: relative;
   }
@@ -104,6 +98,26 @@
   }
 
 }
+
+.page-container__combo-coffee {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 23vw;
+    background-color: #415167;
+    height: 100%;
+    z-index: -1;
+
+    @media screen and (max-width: 585px) {
+      display: none;
+    }
+  }
+}
+
 @media screen and (max-width: 1130px) {
   .combo-coffee {
     .combo-coffee__prev-btn {

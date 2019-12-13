@@ -2,13 +2,7 @@
 .giftset {
   min-height: 802px;
   margin-top: 0;
-  &__light-beckground {
-    position: absolute;
-    left: 0;
-    width: 75.6vw;
-    height: 94.5%;
-    background-color: #edf0f5;
-  }
+
   &__content {
     position: relative;
   }
@@ -132,11 +126,28 @@
     width: 85%;
   }
 }
+
+.page-container__giftset {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 75.6vw;
+    height: 100%;
+    background-color: #edf0f5;
+    z-index: -1;
+
+    @media screen and (max-width: 575px - 1px) {
+      display: none;
+    }
+  }
+}
+
 @media screen and (max-width: 768px - 1px) {
   .giftset {
-    &__light-beckground {
-      height: 100%;
-    }
     &__tabs-content {
       width: 100%;
       background-color: #FFFFFF;
@@ -174,9 +185,7 @@
 @media screen and (max-width: 575px - 1px) {
   .giftset {
     background-color: #edf0f5;
-    &__light-beckground {
-      display: none;
-    }
+
     &__specification {
       flex-direction: column;
       &-tipe {

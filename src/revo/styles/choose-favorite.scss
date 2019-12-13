@@ -1,15 +1,27 @@
 @import "mixins.scss";
+.page-container__choose-favorite {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 27vw;
+    height: 112%;
+    background-color: #415167;
+    z-index: -1;
+
+    @media screen and (max-width: 585px) {
+      display: none;
+    }
+  }
+}
 .choose-favorite {
   display: flex;
   height: auto;
   min-height: 894px;
-  &__dark_background {
-    position: absolute;
-    left: 0;
-    width: 27vw;
-    height: 112%;
-    background-color: #415167;
-  }
+
   &__content {
     position: relative;
     width: 100%;
@@ -138,9 +150,7 @@
 @media screen and (max-width: 585px) {
   .choose-favorite {
     height: auto;
-    &__dark_background {
-      display: none;
-    }
+
     &__content {
       .slider-grid {
         margin-left: calc((100vw - 236px)/2);
