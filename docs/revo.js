@@ -99,29 +99,67 @@ __webpack_require__.r(__webpack_exports__);
 function chooseFavorite() {
   var leftButton = document.querySelector('.slider-btn.prev-btn');
   var rightButton = document.querySelector('.slider-btn.next-btn');
-  var grid = document.querySelector('.grid.slider-grid'); // grid.style.marginLeft = '0px';
+  var grid = document.querySelector('.grid.slider-grid');
+  var width = window.innerWidth;
+  var mediumWidth = 1162;
+  var smallWidth = 585;
+  var largeSliderWidth = 570;
+  var smallSliderWidth = grid.children[0].clientWidth / 2;
+  var screenSize;
+  var sliderWidth;
+  var slidersPerScreen;
 
-  var sliderWidth = 570;
-  var sliderCount = grid.children.length;
-
-  if (sliderCount > 2) {
-    rightButton.style.display = 'block';
+  if (width > mediumWidth) {
+    screenSize = 'large';
+    sliderWidth = largeSliderWidth;
+    slidersPerScreen = 2;
+  } else if (width <= mediumWidth && width > smallWidth) {
+    screenSize = 'medium';
+    sliderWidth = largeSliderWidth;
+    slidersPerScreen = 1;
+  } else {
+    screenSize = 'small';
+    sliderWidth = smallSliderWidth;
+    slidersPerScreen = 1;
   }
 
+  var sliderCount = grid.children.length;
+
+  if (screenSize === 'small') {
+    sliderCount *= 2;
+  }
+
+  rightButton.style.display = 'block';
   var currentSlide = 0;
+  getSlide(currentSlide).classList.add('active');
+
+  if (screenSize === 'large') {
+    getSlide(currentSlide + 1).classList.add('active');
+  }
+
   leftButton.addEventListener('click', function () {
     grid.style.marginLeft = grid.offsetLeft + sliderWidth + 'px';
     currentSlide -= 1;
     checkButtons();
-    grid.children[currentSlide].classList.add('active');
-    grid.children[currentSlide + 2].classList.remove('active');
+    getSlide(currentSlide).classList.add('active');
+
+    if (screenSize === 'large') {
+      getSlide(currentSlide + 2).classList.remove('active');
+    } else {
+      getSlide(currentSlide + 1).classList.remove('active');
+    }
   });
   rightButton.addEventListener('click', function () {
     grid.style.marginLeft = grid.offsetLeft - sliderWidth + 'px';
     currentSlide += 1;
     checkButtons();
-    grid.children[currentSlide - 1].classList.remove('active');
-    grid.children[currentSlide + 1].classList.add('active');
+    getSlide(currentSlide - 1).classList.remove('active');
+
+    if (screenSize === 'large') {
+      getSlide(currentSlide + 1).classList.add('active');
+    } else {
+      getSlide(currentSlide).classList.add('active');
+    }
   });
 
   function checkButtons() {
@@ -131,10 +169,26 @@ function chooseFavorite() {
       leftButton.style.display = 'block';
     }
 
-    if (currentSlide + 2 >= sliderCount) {
+    var slideOffset;
+
+    if (screenSize === 'large') {
+      slideOffset = 2;
+    } else {
+      slideOffset = 1;
+    }
+
+    if (currentSlide + slideOffset >= sliderCount) {
       rightButton.style.display = 'none';
     } else {
       rightButton.style.display = 'block';
+    }
+  }
+
+  function getSlide(number) {
+    if (screenSize !== 'small') {
+      return grid.children[number];
+    } else {
+      return grid.children[Math.floor(number / 2)].children[number % 2];
     }
   }
 }

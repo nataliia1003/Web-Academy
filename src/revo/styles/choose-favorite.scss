@@ -52,11 +52,8 @@
         margin-left: 0;
       }
 
-      &-item {
-        opacity: 0.3;
-        transition: opacity 1s;
-
-        &.active {
+      &-item.active {
+        .choose-favorite__product {
           opacity: 1;
         }
       }
@@ -73,6 +70,12 @@
     box-shadow: 0 4px 24px 0 rgba(205, 205, 205, 0.5);
     margin-top: 32px;
     align-items: center;
+    opacity: 0.3;
+    transition: opacity 1s;
+
+    &.active {
+      opacity: 1;
+    }
 
     img {
       height: 100%;
@@ -143,6 +146,8 @@
         margin-left: calc((100vw - 236px)/2);
         .slider-item {
           display: flex;
+          width: 160vw;
+          padding: 0;
         }
       }
     }
