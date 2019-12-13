@@ -230,7 +230,6 @@ function comboCoffee() {
   var currentSlide = 0;
 
   if (slidersPerScreen === 1) {
-    console.log(width, sliderWidth);
     grid.style.marginLeft = (width - sliderWidth) / 2 + 'px';
   }
 
