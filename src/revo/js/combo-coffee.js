@@ -57,7 +57,7 @@ function comboCoffee() {
             leftButton.style.display = 'block';
         }
 
-        if ((currentSlide + 3) >= sliderCount) {
+        if ((currentSlide + slidersPerScreen) >= sliderCount) {
             rightButton.style.display = 'none';
         } else {
             rightButton.style.display = 'block';

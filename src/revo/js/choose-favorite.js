@@ -79,14 +79,7 @@ function chooseFavorite() {
             leftButton.style.display = 'block';
         }
 
-        let slideOffset;
-        if (screenSize === 'large') {
-            slideOffset = 2;
-        } else {
-            slideOffset = 1;
-        }
-
-        if ((currentSlide + slideOffset) >= sliderCount) {
+        if ((currentSlide + slidersPerScreen) >= sliderCount) {
             rightButton.style.display = 'none';
         } else {
             rightButton.style.display = 'block';
